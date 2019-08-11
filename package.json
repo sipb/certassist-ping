@@ -1,0 +1,45 @@
+{
+  "name": "certassist-ping",
+  "version": "1.0.0",
+  "description": "Utility to check whether CertAssist is up",
+  "homepage": "https://certassist.mit.edu/",
+  "bugs": "https://github.com/sipb/certassist-ping/issues",
+  "license": "MIT",
+  "author": "Anders Kaseorg",
+  "main": "certassist-ping.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sipb/certassist-ping.git"
+  },
+  "dependencies": {
+    "jsdom": "^15.1.1",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "/dist"
+  ],
+  "prettier": {
+    "trailingComma": "es5"
+  }
+}
