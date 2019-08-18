@@ -1,8 +1,5 @@
 const { JSDOM } = require("jsdom");
-
-process.on("unhandledRejection", e => {
-  throw e;
-});
+require("make-promises-safe");
 
 const [, , url] = process.argv;
 
