@@ -12,10 +12,10 @@
     "url": "https://github.com/sipb/certassist-ping.git"
   },
   "dependencies": {
-    "jsdom": "^15.1.1",
-    "make-promises-safe": "^5.0.0",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "jsdom": "^15.2.1",
+    "make-promises-safe": "^5.1.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "env": {

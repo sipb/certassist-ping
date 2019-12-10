@@ -5,6 +5,6 @@ RUN npm ci --production
 COPY . .
 RUN npx webpack-cli -p
 
-FROM astefanutti/scratch-node
+FROM astefanutti/scratch-node:12
 COPY --from=builder /app/dist/main.js /
 ENTRYPOINT ["node", "main.js"]
