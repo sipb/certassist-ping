@@ -3,9 +3,9 @@ require("make-promises-safe");
 
 const [, , url] = process.argv;
 
-const inDom = async window => {
+const inDom = async (window) => {
   if (window.document.readyState === "loading")
-    await new Promise(resolve =>
+    await new Promise((resolve) =>
       window.document.addEventListener("DOMContentLoaded", resolve)
     );
   await window.certAssistMitPing();
